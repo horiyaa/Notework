@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637694365156",
+    "project_id": "notework-7f4b4",
+    "storage_bucket": "notework-7f4b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637694365156:android:d8a6470da94f273821cbf1",
+        "android_client_info": {
+          "package_name": "com.example.notework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637694365156-j7ia5c4mpl5a05kgbi02fp9909ta5do5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw3N2KoDgzf-r-HIj8iQSTs3I1KJk0yKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637694365156-j7ia5c4mpl5a05kgbi02fp9909ta5do5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
