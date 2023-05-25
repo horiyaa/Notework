@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText emailEditText,passwordEditText;
     Button loginBtn;
     ProgressBar progressBar;
-    TextView createAccountBtnTextView;
+    TextView createAccountBtnTextView,resetPasswordBtnTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +35,11 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn = findViewById(R.id.login_btn);
         progressBar = findViewById(R.id.progress_bar);
         createAccountBtnTextView = findViewById(R.id.create_account_text_view_btn);
+        resetPasswordBtnTextView = findViewById(R.id.forgot_pass_text_view_btn);
 
         loginBtn.setOnClickListener((v)-> loginUser() );
         createAccountBtnTextView.setOnClickListener((v)->startActivity(new Intent(LoginActivity.this,CreateAccountActivity.class)) );
-
+        resetPasswordBtnTextView.setOnClickListener((v)->startActivity(new Intent(LoginActivity.this,ResetPasswordActivity.class)) );
     }
 
     void loginUser(){

@@ -14,6 +14,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentReference;
 
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class NoteDetailsActivity extends AppCompatActivity {
 
     EditText titleEditText,contentEditText;
@@ -59,6 +63,10 @@ public class NoteDetailsActivity extends AppCompatActivity {
     void saveNote(){
         String noteTitle = titleEditText.getText().toString();
         String noteContent = contentEditText.getText().toString();
+        Calendar cal=Calendar.getInstance();
+        cal.add(Calendar.HOUR,+3);
+        Date noteDate= cal.getTime() ;
+        String datestring = DateFormat.getInstance().format(noteDate);
         if(noteTitle==null || noteTitle.isEmpty() ){
             titleEditText.setError("Title is required");
             return;
@@ -66,6 +74,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
         Note note = new Note();
         note.setTitle(noteTitle);
         note.setContent(noteContent);
+        note.setDateString(datestring);
         note.setTimestamp(Timestamp.now());
 
         saveNoteToFirebase(note);

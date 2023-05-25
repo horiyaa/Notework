@@ -7,6 +7,7 @@ public class Note {
     String title;
     String content;
     Timestamp timestamp;
+    String dateString;
 
     public Note() {
     }
@@ -33,5 +34,13 @@ public class Note {
 
     public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getDateString() {
+        return dateString;
+    }
+
+    public void setDateString(String dateString) {
+        this.dateString = dateString;
     }
 }
