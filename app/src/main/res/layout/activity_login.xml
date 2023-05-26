@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello."
+            android:text="Hello"
             android:textStyle="bold"
             android:textSize="32sp"
             android:textColor="@color/black"/>
@@ -34,7 +34,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kill yourself already"
+            android:text="Log into your account"
             android:textStyle="bold"
             android:textSize="36sp"
             android:textColor="@color/black"/>
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/email_edit_text"
             android:inputType="textEmailAddress"
-            android:hint="Email Id"
+            android:hint="Email"
             android:textSize="20sp"
             android:background="@drawable/rounded_corner"
             android:padding="16dp"
